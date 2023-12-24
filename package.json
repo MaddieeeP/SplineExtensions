@@ -1,0 +1,12 @@
+{
+  "name": "com.daydream.splineextensions",
+  "version": "0.0.0",
+  "displayName": "Spline Extensions",
+  "description": "Extensions to the Unity spline system.",
+  "rootnamespace": "daydream",
+  "dependencies": {
+    "com.daydream.extensionmethods": "0.0.0",
+    "com.unity.mathematics": "2.0.0",
+    "com.unity.splines": "2.0.0"
+  }
+}
