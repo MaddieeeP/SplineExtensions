@@ -39,7 +39,7 @@ public static class SplineExtensionMethods
         splineContainer.Evaluate(splineIndex, progress, out float3 float3Pos, out float3 float3Forward, out float3 float3Up);
 
         Vector3 forward = (Vector3)float3Forward;
-        attackVector = (Quaternion.Euler(forward) * attackVector).RemoveComponentInDirection(forward).normalized;
+        attackVector = (Quaternion.Euler(forward) * attackVector).RemoveComponentAlongAxis(forward).normalized;
         Vector3 normal = Quaternion.Euler(attackVector).DivideBy(Quaternion.Euler(-1f * Vector3.up)) * (Vector3)float3Up;
 
         return normal.normalized;
